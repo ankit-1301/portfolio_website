@@ -21,10 +21,10 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Left Column */}
           <div>
-            <h3 className="text-2xl font-bold mb-2">Devanshi Tandel</h3>
+            <h3 className="text-2xl font-bold mb-2">Ankit Rathod</h3>
             <p className="text-[#80DEEA] mb-4">Data Engineer | Pipeline Architect</p>
             <p className="text-gray-400 text-sm">
-              © 2026 Devanshi Tandel. All rights reserved.
+              © 2026 Ankit Rathod. All rights reserved.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex gap-4 mb-4">
               <a
-                href="https://www.linkedin.com/in/devanshi-tandel-a96607184/"
+                href="https://www.linkedin.com/in/ankit-rathod-27a631233/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#1E3A5F] rounded-lg flex items-center justify-center hover:bg-[#00BCD4] transition-colors"
@@ -57,7 +57,7 @@ export function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://github.com/devtandel24?tab=repositories"
+                href="https://github.com/ankit-1301?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#1E3A5F] rounded-lg flex items-center justify-center hover:bg-[#00BCD4] transition-colors"
@@ -65,7 +65,7 @@ export function Footer() {
                 <Github size={20} />
               </a>
               <a
-                href="mailto:Devanshi.jtandel@gmail.com"
+                href="mailto:asr95128@gmail.com"
                 className="w-10 h-10 bg-[#1E3A5F] rounded-lg flex items-center justify-center hover:bg-[#00BCD4] transition-colors"
               >
                 <Mail size={20} />

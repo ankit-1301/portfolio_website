@@ -14,7 +14,7 @@ This guide will help you personalize your portfolio with your own assets and inf
    ```tsx
    <ImageWithFallback
      src="/profile.jpg"  // Change this path
-     alt="Devanshi Tandel"
+     alt="Ankit Rathod"
      className="w-full h-full object-cover"
    />
    ```
@@ -234,8 +234,8 @@ All external links are already configured! Here's where they're used:
 ### Contact Information
 - **Email**: `Devanshi.jtandel@gmail.com`
 - **Phone**: `(732) 822-1603`
-- **LinkedIn**: `https://www.linkedin.com/in/devanshi-tandel-a96607184/`
-- **GitHub**: `https://github.com/devtandel24?tab=repositories`
+- **LinkedIn**: `https://www.linkedin.com/in/ankit-rathod-27a631233/`
+- **GitHub**: `https://github.com/ankit-1301?tab=repositories`
 
 ### Google Drive Links
 - **Art Gallery**: Already configured in BeyondWork.tsx
@@ -249,7 +249,7 @@ All external links are already configured! Here's where they're used:
 
 ### Updating Your Information
 
-1. **Name**: Search for "DEVANSHI TANDEL" in all files and replace
+1. **Name**: Search for "Ankit Rathod" in all files and replace
 2. **Tagline**: Update in `/src/app/components/Hero.tsx`
 3. **Bio**: Update in `/src/app/components/About.tsx`
 4. **Experience**: Modify the experiences array in `/src/app/components/Experience.tsx`

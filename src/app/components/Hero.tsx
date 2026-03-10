@@ -1,6 +1,8 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, ChevronDown, Download } from 'lucide-react';
-import profileImage from 'figma:asset/c204b7a8bccf47f8845fa4ba3c12a2bced6a8518.png';
+
+const profileImage = new URL('../../assets/Profile_Image.png', import.meta.url).href;
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -60,7 +62,7 @@ export function Hero() {
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#00BCD4] shadow-2xl">
                 <img
                   src={profileImage}
-                  alt="Devanshi Tandel"
+                  alt="Ankit Rathod"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -80,7 +82,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              DEVANSHI TANDEL
+              Ankit Rathod
             </motion.h1>
 
             <motion.p
@@ -98,8 +100,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              3+ years crafting scalable data solutions, optimizing pipelines, and building cloud
-              infrastructure that powers educational technology
+              Crafting scalable ETL pipelines, optimizing distributed data processing, and building cloud data platforms that power data-driven decisions.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -115,10 +116,15 @@ export function Hero() {
               >
                 View My Work
               </button>
-              <button className="px-8 py-3 border-2 border-[#00BCD4] text-[#00BCD4] font-semibold rounded-lg hover:bg-[#00BCD4] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
-                <Download size={20} />
-                Download Resume
-              </button>
+              <a
+                href="/resume.pdf"
+                download="resume.pdf"
+              >
+                <button className="px-8 py-3 border-2 border-[#00BCD4] text-[#00BCD4] font-semibold rounded-lg hover:bg-[#00BCD4] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
+                  <Download size={20} />
+                  Download Resume
+                </button>
+              </a>
             </motion.div>
 
             {/* Social Icons */}
@@ -129,7 +135,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 1.2 }}
             >
               <a
-                href="https://www.linkedin.com/in/devanshi-tandel-a96607184/"
+                href="https://www.linkedin.com/in/ankit-rathod-27a631233/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-[#00BCD4] transition-colors transform hover:scale-110"
@@ -137,7 +143,7 @@ export function Hero() {
                 <Linkedin size={28} />
               </a>
               <a
-                href="https://github.com/devtandel24?tab=repositories"
+                href="https://github.com/ankit-1301?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-[#00BCD4] transition-colors transform hover:scale-110"
@@ -145,7 +151,7 @@ export function Hero() {
                 <Github size={28} />
               </a>
               <a
-                href="mailto:Devanshi.jtandel@gmail.com"
+                href="mailto:asr95128@gmail.com"
                 className="text-white hover:text-[#00BCD4] transition-colors transform hover:scale-110"
               >
                 <Mail size={28} />

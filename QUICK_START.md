@@ -4,7 +4,7 @@ Get your portfolio up and running in 5 minutes! ⚡
 
 ## Step 1: View Your Portfolio
 
-The portfolio is ready to view right now! All the content about Devanshi Tandel is already populated.
+The portfolio is ready to view right now! All the content about Ankit Rathod is already populated.
 
 ### What You'll See:
 ✅ **Hero Section** - Professional introduction with profile photo  
@@ -32,13 +32,13 @@ The portfolio is ready to view right now! All the content about Devanshi Tandel 
 // Before:
 <ImageWithFallback
   src="https://images.unsplash.com/photo-1712174766230-cb7304feaafe..."
-  alt="Devanshi Tandel"
+  alt="Ankit Rathod"
 />
 
 // After:
 <ImageWithFallback
   src="/your-photo.jpg"  // Put your photo in /public folder
-  alt="Devanshi Tandel"
+  alt="Ankit Rathod"
 />
 ```
 
@@ -110,8 +110,8 @@ See CUSTOMIZATION.md → "Project Thumbnails"
 - **Mobile**: Single column, hamburger menu
 
 ### 🔗 All Links Working
-- ✅ LinkedIn: https://www.linkedin.com/in/devanshi-tandel-a96607184/
-- ✅ GitHub: https://github.com/devtandel24?tab=repositories
+- ✅ LinkedIn: https://www.linkedin.com/in/ankit-rathod-27a631233/
+- ✅ GitHub: https://github.com/ankit-1301?tab=repositories
 - ✅ Email: Devanshi.jtandel@gmail.com
 - ✅ Phone: (732) 822-1603
 - ✅ Art Gallery: Google Drive link
@@ -146,7 +146,7 @@ See CUSTOMIZATION.md → "Project Thumbnails"
 ## Common Questions
 
 **Q: How do I change my name?**  
-A: Search for "DEVANSHI TANDEL" in all files and replace it
+A: Search for "Ankit Rathod" in all files and replace it
 
 **Q: How do I update my experience?**  
 A: Edit the `experiences` array in `/src/app/components/Experience.tsx`

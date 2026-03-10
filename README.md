@@ -1,4 +1,4 @@
-# Devanshi Tandel - Data Engineer Portfolio
+# Ankit Rathod - Data Engineer Portfolio
 
 A modern, professional portfolio website showcasing data engineering expertise with an oceanic data theme featuring deep blues and teal accents.
 
@@ -63,8 +63,8 @@ To complete the portfolio, you'll need to provide the following assets:
 
 ## 🔗 External Links Already Configured
 
-- **LinkedIn**: https://www.linkedin.com/in/devanshi-tandel-a96607184/
-- **GitHub**: https://github.com/devtandel24?tab=repositories
+- **LinkedIn**: https://www.linkedin.com/in/ankit-rathod-27a631233/
+- **GitHub**: https://github.com/ankit-1301?tab=repositories
 - **Email**: Devanshi.jtandel@gmail.com
 - **Phone**: (732) 822-1603
 - **Art Gallery**: Google Drive folder for drawings
@@ -111,7 +111,7 @@ To complete the portfolio, you'll need to provide the following assets:
    ```tsx
    <ImageWithFallback
      src="/path-to-your-image.jpg"
-     alt="Devanshi Tandel"
+     alt="Ankit Rathod"
      className="w-full h-full object-cover"
    />
    ```
@@ -197,11 +197,11 @@ src/
 
 - **Email**: Devanshi.jtandel@gmail.com
 - **Phone**: (732) 822-1603
-- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/devanshi-tandel-a96607184/)
-- **GitHub**: [Check out my code](https://github.com/devtandel24?tab=repositories)
+- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/ankit-rathod-27a631233/)
+- **GitHub**: [Check out my code](https://github.com/ankit-1301?tab=repositories)
 
 ---
 
 **Built with ❤️ and lots of data**
 
-© 2026 Devanshi Tandel. All rights reserved.
+© 2026 Ankit Rathod. All rights reserved.

@@ -59,7 +59,7 @@ export function Navigation() {
             onClick={() => scrollToSection('home')}
             className="text-white font-bold text-xl hover:text-[#00BCD4] transition-colors"
           >
-            DT
+            AR
           </button>
 
           {/* Desktop Navigation */}

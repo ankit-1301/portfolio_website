@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Mail, Phone, Linkedin, Github, MessageCircle, X, Download } from 'lucide-react';
@@ -18,33 +19,35 @@ export function ChatbotWidget() {
       icon: Mail,
       label: 'Send Email',
       emoji: '📧',
-      action: () => window.location.href = 'mailto:Devanshi.jtandel@gmail.com',
+      action: () => window.location.href = 'mailto:asr95128@gmail.com',
     },
     {
       icon: Phone,
       label: 'Call Me',
       emoji: '📞',
-      action: () => window.location.href = 'tel:+17328221603',
+      action: () => window.location.href = 'tel:+917878888792',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       emoji: '💼',
-      action: () => window.open('https://www.linkedin.com/in/devanshi-tandel-a96607184/', '_blank'),
+      action: () => window.open('https://www.linkedin.com/in/ankit-rathod-27a631233/', '_blank'),
     },
     {
       icon: Github,
       label: 'GitHub',
       emoji: '💻',
-      action: () => window.open('https://github.com/devtandel24?tab=repositories', '_blank'),
+      action: () => window.open('https://github.com/ankit-1301?tab=repositories', '_blank'),
     },
     {
       icon: Download,
       label: 'Download Resume',
       emoji: '📄',
       action: () => {
-        // Placeholder for resume download
-        alert('Resume download would start here. Please provide the resume PDF file.');
+        const link = document.createElement('a');
+        link.href = '/resume.pdf';
+        link.download = 'resume.pdf';
+        link.click();
       },
     },
   ];
@@ -64,7 +67,7 @@ export function ChatbotWidget() {
               <MessageCircle className="text-white" size={24} />
               <div>
                 <div className="text-white font-semibold">
-                  Connect with Devanshi
+                  Connect with Ankit
                 </div>
                 <div className="text-white/80 text-xs">How can I help?</div>
               </div>
@@ -81,7 +84,7 @@ export function ChatbotWidget() {
           <div className="p-4 flex-1 overflow-y-auto">
             <div className="mb-4 p-3 bg-[#F5F5F5] rounded-lg">
               <p className="text-sm text-[#212121]">
-                Hi! I'm here to help you connect with Devanshi. How would you like to reach out?
+                Hi! I'm here to help you connect with Ankit. How would you like to reach out?
               </p>
             </div>
 
