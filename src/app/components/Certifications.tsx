@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
@@ -9,24 +10,28 @@ export function Certifications() {
 
   const certifications = [
     {
-      title: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      description: 'Cloud architecture and deployment expertise',
+      title: 'Data Engineering Basics for Data Analysts',
+      issuer: 'Codebasics',
+      issued: 'Feb 2026',
+      credentialId: 'CB-103-216597',
+      url: 'https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fcodebasics.io%2Fcertificate%2FCB-103-216597&urlhash=8HNc&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3ByQNBPAm2RIWIYnkRHK3n5g%3D%3D',
+      description: 'Core data engineering concepts and foundational pipeline patterns',
     },
     {
-      title: 'Google Cloud Professional Data Engineer',
-      issuer: 'Google Cloud',
-      description: 'Data engineering and analytics on GCP',
+      title: 'Python: Beginner to Advanced For Data Professionals',
+      issuer: 'Codebasics',
+      issued: 'Feb 2026',
+      credentialId: 'CB-48-216597',
+      url: 'https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fcodebasics.io%2Fcertificate%2FCB-48-216597&urlhash=EXST&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3ByQNBPAm2RIWIYnkRHK3n5g%3D%3D',
+      description: 'Python proficiency for data workflows, analysis, and automation',
     },
     {
-      title: 'Microsoft Azure Data Engineer Associate',
-      issuer: 'Microsoft',
-      description: 'Azure data platform solutions',
-    },
-    {
-      title: 'Databricks Certified Data Engineer',
-      issuer: 'Databricks',
-      description: 'Advanced data engineering with Spark',
+      title: 'SQL Beginner to Advanced For Data Professionals',
+      issuer: 'Codebasics',
+      issued: 'Jan 2026',
+      credentialId: 'CB-50-216597',
+      url: 'https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fcodebasics.io%2Fcertificate%2FCB-50-216597&urlhash=8vDZ&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BTgCz7g7aSUmOkSJ7pHI%2F1g%3D%3D',
+      description: 'SQL skills for querying, modeling, and analytics at scale',
     },
   ];
 
@@ -77,37 +82,27 @@ export function Certifications() {
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-[#0A1628] mb-2">{cert.title}</h3>
                   <p className="text-[#1E3A5F] font-semibold mb-2">{cert.issuer}</p>
+                  <p className="text-[#212121] text-sm opacity-80 mb-3">
+                    Issued {cert.issued} • Credential ID {cert.credentialId}
+                  </p>
                   <p className="text-[#212121] text-sm flex items-start gap-2">
                     <CheckCircle className="text-[#00BCD4] flex-shrink-0 mt-0.5" size={16} />
                     <span>{cert.description}</span>
                   </p>
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-[#00BCD4] font-semibold hover:text-[#4DD0E1] transition-colors group"
+                  >
+                    <span>View / Download Certificate</span>
+                    <ExternalLink size={16} className="group-hover:translate-x-0.5 transition-transform" />
+                  </a>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
-
-        {/* View All Button */}
-        <motion.div
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          <a
-            href="https://drive.google.com/drive/folders/1s2SHV-8Z4Rqpx5ImM6euC7nQX1Wyyj6C?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00BCD4] to-[#4DD0E1] text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
-          >
-            <Award size={24} />
-            <span>View All Certifications</span>
-            <ExternalLink size={20} className="group-hover:translate-x-1 transition-transform" />
-          </a>
-          <p className="text-sm text-[#212121] mt-4 opacity-70">
-            Click to access complete certification portfolio on Google Drive
-          </p>
-        </motion.div>
       </div>
     </section>
   );

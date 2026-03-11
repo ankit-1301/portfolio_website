@@ -1,7 +1,8 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
-import { Workflow, Database, Cloud, Code, Activity } from 'lucide-react';
+import { Workflow, Layers, Database, Code2, CloudCog, Radio } from 'lucide-react';
 
 export function Skills() {
   const ref = useRef(null);
@@ -10,64 +11,79 @@ export function Skills() {
   const skillCategories = [
     {
       icon: Workflow,
-      category: 'Data Engineering & Orchestration',
+      category: 'Data Pipeline Engineering',
       skills: [
-        'ETL/ELT',
+        'ETL / ELT Pipeline Development',
         'Apache Airflow',
-        'Data Modeling (3NF, Star Schema)',
-        'Data Warehousing',
-        'Batch Processing',
+        'dbt (Data Build Tool)',
+        'Batch & Incremental Processing',
         'Data Quality Validation',
+        'API Data Ingestion',
       ],
       color: '#00BCD4',
+    },
+    {
+      icon: Layers,
+      category: 'Data Architecture & Modeling',
+      skills: [
+        'Medallion Architecture',
+        'Data Lakehouse Design',
+        'Star Schema',
+        'SCD Type 2',
+        'Dimensional Modeling',
+        'Data Warehousing',
+      ],
+      color: '#4DD0E1',
     },
     {
       icon: Database,
-      category: 'Databases & Storage',
+      category: 'Data Platforms & Storage',
       skills: [
-        'PostgreSQL',
-        'Aurora PostgreSQL',
         'Snowflake',
-        'MySQL',
-        'Oracle',
-        'Redis',
-      ],
-      color: '#4DD0E1',
-    },
-    {
-      icon: Cloud,
-      category: 'Cloud & DevOps',
-      skills: [
-        'AWS (EC2, S3, RDS)',
-        'AWS Lambda',
-        'CloudFront',
-        'WAF & GuardDuty',
-        'Azure Data Factory',
-        'Docker',
-        'CI/CD',
-        'Kubernetes',
+        'Databricks',
+        'Delta Lake',
+        'AWS S3 Data Lake',
+        'PostgreSQL',
+        'MongoDB',
       ],
       color: '#00BCD4',
     },
     {
-      icon: Code,
-      category: 'Programming & Tools',
+      icon: Code2,
+      category: 'Programming & Data Processing',
       skills: [
-        'Python (Pandas, NumPy)',
+        'Python',
         'SQL',
-        'Node.js',
-        'Express',
-        'Git/GitHub',
-        'Jupyter',
-        'VS Code',
+        'PySpark',
+        'Pandas',
+        'NumPy',
+        'Object-Oriented Programming',
       ],
       color: '#4DD0E1',
     },
     {
-      icon: Activity,
-      category: 'Data Streaming & Analytics',
-      skills: ['Kafka', 'Apache Spark', 'Power BI', 'Data Visualization'],
+      icon: CloudCog,
+      category: 'Cloud & Infrastructure',
+      skills: [
+        'AWS (S3, Lambda, IAM)',
+        'Azure (ADLS Gen2, Synapse)',
+        'Docker',
+        'CI/CD Pipelines',
+        'Git & GitHub',
+      ],
       color: '#00BCD4',
+    },
+    {
+      icon: Radio,
+      category: 'Streaming & Analytics',
+      skills: [
+        'Apache Kafka',
+        'Apache Flink',
+        'Event-Driven Architecture',
+        'Power BI',
+        'Real-Time Data Processing',
+      ],
+      color: '#4DD0E1',
     },
   ];
 

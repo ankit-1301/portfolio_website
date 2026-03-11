@@ -5,7 +5,6 @@ import { Experience } from './Experience';
 import { Projects } from './Projects';
 import { Skills } from './Skills';
 import { Certifications } from './Certifications';
-import { BeyondWork } from './BeyondWork';
 import { Footer } from './Footer';
 import { ChatbotWidget } from './ChatbotWidget';
 
@@ -20,7 +19,6 @@ export function HomePage() {
         <Projects />
         <Skills />
         <Certifications />
-        <BeyondWork />
       </main>
       <Footer />
       <ChatbotWidget />

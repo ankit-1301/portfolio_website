@@ -1,7 +1,8 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
-import { Database, Cloud, CheckCircle, ExternalLink } from 'lucide-react';
+import { LineChart, Radar, ShoppingCart, Plane, CheckCircle, ExternalLink } from 'lucide-react';
 
 export function Projects() {
   const ref = useRef(null);
@@ -9,29 +10,69 @@ export function Projects() {
 
   const projects = [
     {
-      icon: Database,
-      title: 'Student Project Archiving Platform',
+      icon: LineChart,
+      title: 'EOD Securities Pricing Data Pipeline',
       description:
-        'Enterprise-scale platform managing 150+ projects with 6GB file support, processing 1M+ records daily with 99.8% accuracy',
-      techStack: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Apache Airflow'],
+        'Automated end-of-day pricing ingestion pipeline for U.S. equities and ETFs using AWS, Snowflake, Airflow, and dbt delivering analytics-ready datasets with 50%+ query performance improvement.',
+      techStack: ['AWS S3', 'Snowflake', 'Apache Airflow', 'dbt', 'Python', 'Power BI'],
       features: [
-        'Airflow-orchestrated ETL pipelines with automated data quality validation',
-        'PostgreSQL database with 40% query performance improvement',
-        'AWS infrastructure with comprehensive security hardening',
-        'FERPA-compliant data governance framework',
+        'Automated API ingestion pipeline storing raw market data in AWS S3 data lake',
+        'Airflow DAG orchestration with scheduling, retry logic, and pipeline monitoring',
+        'dbt incremental fact and dimension models with automated data quality tests',
+        'Snowflake warehouse optimization improving analytical query performance by 50%+',
       ],
     },
     {
-      icon: Cloud,
-      title: 'Automated NLP Data Pipeline',
+      icon: Radar,
+      title: 'Real-Time IoT Fleet Analytics Platform',
       description:
-        'End-to-end ETL pipeline processing 100K+ social media comments with automated ML-based content classification achieving 92% accuracy',
-      techStack: ['Python', 'Apache Airflow', 'AWS EC2', 'AWS S3', 'NLP'],
+        'Real-time streaming analytics platform processing IoT fleet telemetry using Kafka and Apache Flink with anomaly detection triggering alerts within 5 seconds.',
+      techStack: [
+        'Apache Kafka',
+        'Apache Flink',
+        'Azure Data Lake',
+        'Azure Functions',
+        'Synapse Analytics',
+        'Twilio',
+      ],
       features: [
-        'Apache Airflow batch ingestion and preprocessing',
-        'Text cleaning and feature engineering (TF-IDF, word embeddings)',
-        'Supervised classification model with 92% accuracy',
-        'Data versioning and lineage tracking',
+        'Kafka streaming pipeline ingesting real-time vehicle telemetry data',
+        'Apache Flink stream processing detecting anomalies such as overspeeding and fuel drops',
+        'Azure Functions triggering automated SMS and call alerts via Twilio within seconds',
+        'Cold-path analytics with Synapse fact/dimension models powering BI dashboards',
+      ],
+    },
+    {
+      icon: ShoppingCart,
+      title: 'ShopVista E-Commerce Data Platform',
+      description:
+        'Modern data lakehouse built on Azure Databricks using PySpark and Medallion Architecture to process large-scale e-commerce datasets for analytics and BI.',
+      techStack: [
+        'Azure Databricks',
+        'PySpark',
+        'ADLS Gen2',
+        'Delta Lake',
+        'Docker',
+        'Power BI',
+      ],
+      features: [
+        'Implemented Bronze, Silver, and Gold Medallion pipelines using PySpark',
+        'Built scalable data transformations with schema validation and deduplication',
+        'Published Star Schema gold tables optimized for BI reporting',
+        'Containerized workflows using Docker enabling reproducible deployments',
+      ],
+    },
+    {
+      icon: Plane,
+      title: 'Travel Booking Data Platform',
+      description:
+        'Data platform transforming travel booking and payment datasets into analytics-ready models using dimensional modeling and machine learning.',
+      techStack: ['Python', 'SQL', 'Databricks', 'Delta Lake', 'XGBoost', 'Scikit-learn'],
+      features: [
+        'Designed Bronze → Silver → Gold Medallion pipelines for booking and payment data',
+        'Implemented Star Schema and SCD Type 2 dimensional models for revenue analytics',
+        'Engineered ML-ready features for customer behavior analysis',
+        'Trained XGBoost model for revenue prediction and customer segmentation',
       ],
     },
   ];
@@ -115,13 +156,13 @@ export function Projects() {
               </ul>
 
               {/* View Details Button */}
-              <button className="flex items-center gap-2 px-6 py-3 bg-[#00BCD4] text-white font-semibold rounded-lg hover:bg-[#4DD0E1] transition-all duration-300 hover:shadow-lg group">
+              {/* <button className="flex items-center gap-2 px-6 py-3 bg-[#00BCD4] text-white font-semibold rounded-lg hover:bg-[#4DD0E1] transition-all duration-300 hover:shadow-lg group">
                 View Details
                 <ExternalLink
                   className="group-hover:translate-x-1 transition-transform"
                   size={18}
                 />
-              </button>
+              </button> */}
             </motion.div>
           ))}
         </div>

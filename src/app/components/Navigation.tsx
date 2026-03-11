@@ -11,7 +11,7 @@ export function Navigation() {
       setIsScrolled(window.scrollY > 50);
 
       // Determine active section
-      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'beyond-work'];
+      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'certifications'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -43,7 +43,6 @@ export function Navigation() {
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
     { id: 'certifications', label: 'Certifications' },
-    { id: 'beyond-work', label: 'Beyond Work' },
   ];
 
   return (

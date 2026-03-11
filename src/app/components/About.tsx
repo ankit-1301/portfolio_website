@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
@@ -33,18 +34,22 @@ export function About() {
             </h2>
             <div className="w-20 h-1 bg-[#00BCD4] mb-6" />
             <p className="text-lg text-[#212121] leading-relaxed mb-6">
-              Data science professional with 3+ years of experience designing and implementing
-              scalable data pipelines, optimizing database architectures, and building cloud-based
-              data infrastructure.
+              Data Engineer specializing in building scalable ETL/ELT pipelines and modern
+              data platforms on AWS, Databricks, and Snowflake. Experienced in designing
+              Medallion Architecture data lakes, implementing Star Schema and SCD Type 2
+              models, and processing high-volume datasets ranging from millions of records
+              per day.
             </p>
             <p className="text-lg text-[#212121] leading-relaxed mb-6">
-              Currently serving as Data Science Specialist at DAE Inc., where I architect
-              educational technology platforms serving 50,000+ users while mentoring the next
-              generation of tech professionals.
+              Currently working as a Data Engineer at Bizviz Technologies, where I build
+              production-grade data pipelines, optimize warehouse performance, and enable
+              analytics teams with reliable, ML-ready datasets. Passionate about solving
+              complex data problems, improving query performance, and building scalable
+              data infrastructure that powers business decisions.
             </p>
             <div className="flex items-center gap-2 text-[#00BCD4] font-semibold">
               <div className="w-2 h-2 bg-[#00BCD4] rounded-full animate-pulse" />
-              Currently based in Connecticut | Willing to relocate anywhere
+              Currently based in Bangalore, India | Willing to relocate anywhere
             </div>
           </motion.div>
         </div>

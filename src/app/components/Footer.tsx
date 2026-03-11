@@ -1,3 +1,4 @@
+import React from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 export function Footer() {
@@ -22,7 +23,7 @@ export function Footer() {
           {/* Left Column */}
           <div>
             <h3 className="text-2xl font-bold mb-2">Ankit Rathod</h3>
-            <p className="text-[#80DEEA] mb-4">Data Engineer | Pipeline Architect</p>
+            <p className="text-[#80DEEA] mb-4">Data Engineer</p>
             <p className="text-gray-400 text-sm">
               © 2026 Ankit Rathod. All rights reserved.
             </p>

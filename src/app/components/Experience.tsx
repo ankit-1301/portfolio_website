@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
@@ -10,40 +11,28 @@ export function Experience() {
   const experiences = [
     {
       icon: Building2,
-      position: 'Data Science Specialist',
-      company: 'DAE Inc.',
-      location: 'Connecticut, USA',
-      period: 'Sep 2024 – Present',
+      position: 'Data Engineer',
+      company: 'Bizviz Technologies (BDB.ai)',
+      location: 'Bengaluru, India',
+      period: 'Nov 2024 – Present',
       highlights: [
-        'Architected dual-platform educational technology infrastructure',
-        'Designed enterprise-scale database architecture achieving 40% query performance improvement',
-        'Deployed production AWS infrastructure with 99.9% uptime',
-        'Implemented FERPA-compliant data governance framework',
+        'Engineered 12+ production ETL/ELT pipelines on AWS S3 and Snowflake processing 2–5M records/day',
+        'Architected Medallion Architecture (Bronze/Silver/Gold) on Databricks Delta Lake with Star Schema and SCD Type 2 modeling',
+        'Optimized warehouse performance using partitioning and incremental loads improving query performance by 50–60%',
+        'Automated workflows with Airflow DAGs and dbt data quality tests enabling reliable analytics datasets',
       ],
     },
     {
       icon: Code,
-      position: 'Software Engineer',
-      company: 'Tata Consultancy Services',
-      location: 'India',
-      period: 'Jul 2021 – Dec 2022',
+      position: 'Data Service Engineer Intern',
+      company: 'Windowmaker',
+      location: 'Vadodara, India',
+      period: 'Jan 2024 – Mar 2024',
       highlights: [
-        'Designed relational data models for 15+ enterprise clients',
-        'Built data migration pipelines processing 10M+ records with 99.8% accuracy',
-        'Developed automated workflows using Apache Airflow reducing manual intervention by 40%',
-        'Created Power BI dashboards serving 50+ stakeholders',
-      ],
-    },
-    {
-      icon: GraduationCap,
-      position: 'Teaching/Learning Assistant – AI & Data Science',
-      company: 'University of New Haven',
-      location: 'Connecticut, USA',
-      period: 'Aug 2023 – Dec 2024',
-      highlights: [
-        'Supported 60+ graduate students with data engineering projects',
-        'Utilized Python, SQL, and cloud technologies for academic program improvements',
-        'Mentored students on best practices in data pipeline development',
+        'Extracted and validated 100K+ records using SQL improving reporting accuracy',
+        'Developed Python-based data quality validation scripts for reconciliation processes',
+        'Improved data reliability by implementing automated validation checks and anomaly detection',
+        'Collaborated with business teams to streamline reporting and analytics workflows',
       ],
     },
   ];
